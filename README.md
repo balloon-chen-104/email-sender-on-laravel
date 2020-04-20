@@ -1,6 +1,6 @@
 # Email Sender
 
-## implement sending email by laravel
+## Implement sending email by laravel
 
 This project is an example about sending email by laravel.
 
@@ -16,6 +16,13 @@ After you clone the project, you need to enter the root folder and install all p
 
 ```
 email-sender-on-laravel$ composer install
+```
+
+Next, copy the .env.example in laravel. Then, generate a key for laravel. By default, we put .env file into .gitignore, so you can put your own environment settings here without leaking your private settings.
+
+```
+email-sender-on-laravel$ cp .env.example .env
+email-sender-on-laravel$ php artisan key:generate
 ```
 
 ### environment
